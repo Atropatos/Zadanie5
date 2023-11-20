@@ -19,3 +19,5 @@ p
 @app/src/main/java/com/example/mainactivity/TaskListActivity.java,f\1\f1da2b0ba092d6caa1d2b21d8ed4339e84303810
 v
 Fapp/src/main/java/com/example/mainactivity/SingleFragmentActivity.java,8\4\84918704633e04e3b3bf072ecf6ed9c49e9f6070
+h
+8app/src/main/java/com/example/mainactivity/Category.java,f\5\f52efc7d8f1c50bea8f505a486940c401249f2ab

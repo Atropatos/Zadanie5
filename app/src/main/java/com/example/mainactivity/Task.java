@@ -9,28 +9,43 @@ public class Task {
     private Date date;
     private boolean done;
 
-    public Task() {
+    private Category category;
+
+    public Task(){
         id = UUID.randomUUID();
         date = new Date();
+        category = Category.HOME;
     }
 
-    public Date getDate() {
-        return date;
+    public String getName(){
+        return name;
     }
 
-    public boolean isDone() {
-        return done;
-    }
-    public void setDone(boolean isChecked) {
-        done = isChecked;
-    }
-
-    public void setName(String name) {
+    public void setName(String name){
         this.name = name;
     }
 
-    public String getName() { return name;}
+    public Date getDate(){
+        return date;
+    }
 
-    public UUID getId() { return id;}
+    public void setDate(Date date) {
+        this.date =date;
+    }
+
+    public boolean isDone(){
+        return done;
+    }
+
+    public void setDone(boolean done){
+        this.done = done;
+    }
+
+    public UUID getId() {return id;}
+
+    public Category getCategory() { return category;}
+
+    public void setCategory(Category category) {this.category = category;}
+
 
 }

@@ -3,36 +3,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="20dp"
-    >
-
+    android:layout_margin="20dp">
 
     <TextView
-
+        style="?android:listSeparatorTextViewStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name_label"
-        />
+        android:text="@string/name_label" />
 
-   <EditText
-       android:id="@+id/task_name"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:hint="@string/name_hint"
-       />
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_hint" />
+
+
+
     <TextView
+        style="?android:listSeparatorTextViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/details_label"/>
-    <Button
+        android:text="@string/details_label" />
+
+    <EditText
         android:id="@+id/task_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:autofillHints=""
+        android:inputType="date"
+        />
+
+    <Button
+        android:id="@+id/zmien_nazwe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zmien nazwe"
+        />
+
     <CheckBox
         android:id="@+id/task_done"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/done_label"/>
+        android:text="@string/done_label" />
+    <Spinner
+        android:id="@+id/task_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 
 
 
